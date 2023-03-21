@@ -6,49 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilha de CSS</title>
    <link rel="stylesheet" href="./assets/css/style.css">
-
-   <style>
-    
-
-    /* inherit 
-        div{
-            background: blue;
-            width: initial;
-            height: auto;
-            margin: 0 auto;
-            padding: 2px;
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid black;
         }
-        button{
-            min-width: 200px;
-            max-height: 200px;
-        } */
-
-   </style>
-    <!-- <style>
-        h1{
-
-            background: red;
-            color: white;
+        img{
+            width: 100%;
+            height: 100%;
         }
-        h2{
-            background: blue;
-        }
-        html,body {
 
-            margin: 1.4rem;
-            padding: 0;
+        #contain{
+            object-fit: scale-down;
         }
-    </style> -->
+    </style>
 
 </head>
 <body>
-
-    <div id="elemento-01"> </div>
-    <div id="elemento-02"></div>
-  <div>
-      
-<button>Oláasdsadsadkjasjdhasbdjhsahdbjhsabjdbsahbdjbsajdbjsabjdbjsabdj</button>
-
-  </div>
+  <h1>Propert <code>object-fit</code></h1>
+  <code>objeto-fit: fill ;</code>(padrão)
+  <div> <img src="/img/pexels-sachin-c-nair-954929.jpg" alt="flor">
+ </div>
+ <h1>Propert <code>object-fit</code></h1>
+  <code>objeto-fit: contain ;</code>(padrão)
+  <div> <img src="/img/pexels-sachin-c-nair-954929.jpg" alt="flor" id="contain">
+ </div>
 </body>
 </html>
