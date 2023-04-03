@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de noticias Intergalatico</title>
+    <link rel="stylesheet" href="./styles/card.css">
+   
+    <script src="./src/Components/TituloDinamico.js" defer></script>
+    <script src="./src/Components/CardNews2.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+
+            <div class="card">
+                <div class="card__left">
+                    <span class="autor">Rebeldes</span>
+                    <a href="#" class="link">Contrado DEVs </a>
+                    <p> Chefe do Imperio, está atras de desenvolvedores que sabem trabalhar com componentes e SPA </p>
+                </div>
+                <div class="card__rigth">
+                        <img src="./assets/asset-vader.jpg" alt="Imagem do dart Vader">
+                </div>
+            </div>
+        </div>
+       
+        <titulo-dinamico link="Altas noticias do imperio"></titulo-dinamico>
+    <card-news
+        autor="Yurizao"
+        link="Altas noticias interessantes"
+        newsContent="Yurizao vai atuar com a escalação do flamengo no proximo campeonato diz tecnico
+        'temos muita sorte de ter esse atleta tao especializado no time'.."
+        newsImage="https://media.gettyimages.com/id/497811221/pt/foto/shooting-power.jpg?s=612x612&w=gi&k=20&c=rarpQPHSa-wXVovWD9vZdNax-XZi6so7K038nU4yh28="
+
+    >
+</card-news>
+    <titulo-dinamico></titulo-dinamico>
+    </section>
+</body>
+</html>
