@@ -1,28 +1,84 @@
-class character {
-    name: string ="";
-    stregth: number;
-    skill: number;
+//generics
 
-    /**
-     *
-     */
-    constructor(name:string, stregth:number,skill:number) {
-        
-        this.name = name;  
-       this.stregth = stregth;
-       this.skill =skill;
-    }
-    attack(): void{
-        console.log(`Attack ${this.stregth}`);
-    }
-
+function concatArray(...itens: any[]): any[] {
+    return new Array().concat(...itens);
 }
 
-const p1 = new character("yurizao", 12, 98);
+const numArray = concatArray([54,12,"yuri"],[122]);
+console.log(numArray);
 
-p1.attack();
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class character {
+//     protected name?: string;
+//     stregth: number;
+//     skill: number;
+
+//     /**
+//      *data modifiers 
+//     public
+//     private
+//     protected
+//      */
+    
+
+
+
+//     constructor(name:string, stregth:number,skill:number) {
+        
+//         this.name = name;  
+//        this.stregth = stregth;
+//        this.skill =skill;
+//     }
+//     attack(): void{
+//         console.log(`Attack ${this.stregth}`);
+//     }
+//     alterarnome( nome:string): void {
+//     this.name = nome;
+//     }
+//     apresentar(): void{
+//         console.log(this.name);
+//     }
+
+// }
+
+// class Magician extends character{
+//     magicPoint?:number;
+//     constructor(
+//         name: string,
+//         stregth: number,
+//         skill: number,
+//         magicPoint: number
+//     ) {
+//         super(name, stregth, skill);
+//         this.magicPoint = magicPoint;
+
+        
+//     }
+// }
+
+// const p1 = new character("yurizao", 12, 98);
+// p1.alterarnome("yurizaasao")
+// p1.attack();
+// console.log(p1.apresentar());
+
+// const p2 = new Magician("Zulu",7,50,1000)
+// p2.apresentar();
 
 
 
