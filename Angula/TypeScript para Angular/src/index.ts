@@ -1,11 +1,73 @@
-//generics
+//decorators
 
-function concatArray(...itens: any[]): any[] {
-    return new Array().concat(...itens);
+function apiVersion(version: string) {
+    return (target: any) => {
+        Object.assign(target.prototype, {__version: version});
+    }
 }
 
-const numArray = concatArray([54,12,"yuri"],[122]);
-console.log(numArray);
+@apiVersion("1.10")
+class Api{ }
+
+const api = new Api();
+
+console.log(api.__version)
+
+
+
+
+
+
+
+
+
+
+
+// function ExibirNome(target: any) {
+//     console.log(target);
+// }
+
+// @ExibirNome
+// class funcionario{
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//generics
+
+// function concatArray(...itens: any[]): any[] {
+//     return new Array().concat(...itens);
+// }
+
+// const numArray = concatArray([54,12,"yuri"],[122]);
+// console.log(numArray);
 
 
 
