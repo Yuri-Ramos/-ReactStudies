@@ -1,0 +1,5 @@
+<app-card *ngIf="isALive; else anotherBlock" ></app-card>
+<ng-template #anotherBlock >
+  <p> Oláaaaaa to escondido</p>
+</ng-template>
+<router-outlet></router-outlet>
