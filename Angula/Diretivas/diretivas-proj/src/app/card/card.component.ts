@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
 
   produtos: string[] = [];
+  menuType:string= "SuperAdmssin";
   constructor() {
     this.produtos = [
       "mouser",
@@ -19,5 +20,11 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  adicionar() {
+  this.produtos.push("produto adicionado");
+  }
+  remover(index: number): void {
+    alert(index + "removido");
+  this.produtos.splice(index);
+  }
 }
